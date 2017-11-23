@@ -1,0 +1,39 @@
+\chapter{Prova sperimentale}
+\section{Galleria}
+La prova è stata svolta nella galleria del vento adibita alle visualizzazioni del Politecnico di Milano. Questo modello viene usato per indagare correnti bidimensionali ed ha una camera di prova di dimensione \textasciitilde $550x300x40 mm$.
+La generazione e immissione dei fili di fumo è svolta da un sistema integrato nella galleria: il generatore di fumi consiste in una resistenza che fa evaporare olio di parafina, mentre l'immissione è affidata ad un rastrello di cannule posto a circa 150 mm dall'asse di rotazione del profilo. La galleria è illuminata da lampade a fluorescenza poste nella parete superiore,mentre la parete rivolta verso l'osservatore è trasparente. \\
+Il profilo in esame è un NACA0013 di corda $c = 150 mm$, la sua rotazione è comandata a mano tramite un sistema a pulegge. \\
+La corrente ha una velocità asintotica stimata $U_{\infty} = 1.5 m/s$; considerando la viscosità cinematica pari  $\nu = 1.5*10^-5 m^2/s$ è possibile calcolare il numero di Reynolds della prova:
+
+\begin{center}
+\begin{equation}
+Re = \frac{U_{\infty} * c}{\nu} = 15000
+\end{equation}
+\end{center} 
+
+\section{Strumentazione}
+I filmati sono stati acquisiti con una fotocamera \emph{Canon EOS600D} attraverso un obiettivo grandangolare EF18-55mm f/3.5-5.6; la camera ha un sensore \emph{CMOS} da 18 Mpixel in modalità foto e permette riprese fino a 50 \emph{fps}. La macchina è stata posizionata su un cavalletto in modo da eseguire riprese stabili e mantenere un allineamento costante.
+
+\section{Acquisizioni}
+Data la necessità di indagare diverse grandezze sono state eseguite cinque acquisizioni. La frequenza di shedding attesa è molto minore di 10 Hz; ciò ha permesso di acquisire il filmato anche con un framerate ridotto a 24 fps soddisfando comunque il teorema di Nyquist. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Nome & FPS & Esposizione frame [s] & ISO  & Descrizione \\
+\hline
+9900 & 24  & 1/40            & 1600 & Incidenza nulla\\
+\hline
+9904 & 24  & 1/30            & 3200 & Avvio e Vortex shedding \\
+\hline
+9906 & 24  & 1/30            & 1600 & Vortex shedding \\
+\hline
+9911 & 50  & 1/60            & 3200 & Vortex shedding \\
+\hline
+\end{tabular}
+\caption{Descrizione acquisizioni}
+\label{tab: Acquisizioni}
+\end{table}
+
+

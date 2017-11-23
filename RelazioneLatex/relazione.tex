@@ -1,0 +1,126 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%\newcommand{\makecell}[2][@{}c@{}]{\begin{tabular}{#1}#2\end{tabular}}
+\usepackage[italian]{babel}
+\usepackage{here}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern} 
+\usepackage{textcomp} 
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{gensymb}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{cleveref}
+%\usepackage[]{mcode}
+%\usepackage{cancel}
+
+
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+
+
+
+\usepackage{mathrsfs}
+\usepackage{color}
+\usepackage[top=1.0in, bottom=1.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage{wrapfig}
+\usepackage[normalem]{ulem}
+\usepackage[toc, page]{appendix}
+\usepackage{hyperref}
+\graphicspath{ {Figure/} }
+\makeatletter
+\DeclareRobustCommand*\textsubscript[1]{%
+  \@textsubscript{\selectfont#1}}
+\def\@textsubscript#1{%
+  {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}
+\makeatother
+%per togliere la parola capitolo dall'intestazione
+\makeatletter
+%\renewcommand\@chapapp{}
+\makeatother
+
+\title{\medskip
+\begin{Huge}
+\textbf{Politecnico di Milano}
+\end{Huge}
+\linebreak
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1]{poli.jpg}
+\end{figure}
+\linebreak\linebreak
+\begin{huge}
+Visualizzazioni a fili di fumo 
+\end{huge} 
+\linebreak\linebreak  
+\begin{LARGE}
+Fluidodinamica Sperimentale 2016/17
+\end{LARGE}
+\linebreak\linebreak\linebreak\linebreak\linebreak}
+\author{\begin{tabular}{l l}
+Tommaso Ghidoni & 841839\\
+\\\\\\
+\end{tabular}}
+
+
+\begin{document}
+\pagenumbering{roman}
+\pagestyle{empty}
+\maketitle
+\pagebreak
+\tableofcontents
+\listoffigures
+\listoftables
+\cleardoublepage
+\pagenumbering{arabic}
+\pagestyle{plain}
+\pagebreak
+\include{intro}
+\include{prova_sperimentale}
+\include{analisi_immagine}
+\include{confronto_dati}
+\include{conclusioni}
+\appendix
+\include{appendice}
+
+%\begin{thebibliography}{1}
+%\addcontentsline{toc}{chapter}{Bibliografia}
+%
+%\bibitem{pope} J. B. Barlow, W. H. Rae, Jr. A. Pope, {\em Low-speed wind tunnel testing}, John Wiley \& Sons, 1999
+%
+%\bibitem{spri} C. Tropea, A. L. Yarin, J. F. Foss (Eds.), {\em Springer Handbook of experimental Fluid Mechanics}, Springer, 2007
+%
+%\end{thebibliography}
+
+\end{document}
