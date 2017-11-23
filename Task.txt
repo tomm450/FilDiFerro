@@ -1,0 +1,14 @@
+3) Visualizzazioni a fili di fumo su un profilo
+In una relazione di questo tipo si deve cercare di ottenere il massimo di informazione dalla visualizzazione ottenuta: 
+teoricamente 
+x - e' possibile ricavare le incidenze di stallo positiva e negativa
+x - lo spessore approssimato della scia
+x - le dimensioni di ricircoli e vortici
+x - i tempi scala e le frequenze delle strutture
+
+ed altro ancora. 
+
+In pratica, ci saranno limiti legati alla qualita' delle immagini 
+(le tecniche usate per gli eventuali miglioramenti ed analisi di immagine dovranno essere descritte brevemente). 
+
+Le informazioni ottenute andranno confrontate con le prestazioni note del profilo utilizzato
